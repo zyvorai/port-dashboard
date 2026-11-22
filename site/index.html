@@ -28,6 +28,7 @@
 <meta name="twitter:image" content="https://zyvorai.github.io/port-dashboard/social/og.png">
 <meta name="twitter:image:alt" content="Port Dashboard: What is listening on your Mac. The menu-bar popover lists ports with process, project and memory. Sample data.">
 <link rel="stylesheet" href="assets/landing.css">
+<link rel="stylesheet" href="assets/zyvor-buyer.css">
 <style>:root{--accent-btn:#0f766e;--accent-ink:#0f766e;--accent-grad-a:#14b8a6;--accent-grad-b:#5eead4}@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--accent-ink:#2dd4bf}}:root[data-theme="dark"]{--accent-ink:#2dd4bf}</style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Port Dashboard","applicationCategory":"DeveloperApplication","operatingSystem":"macOS","softwareVersion":"1.0.0","downloadUrl":"https://github.com/zyvorai/port-dashboard/releases/tag/v1.0.0","url":"https://zyvorai.github.io/port-dashboard/","description":"Port Dashboard: a free macOS menu-bar app that lists listening TCP and UDP ports with the owning process, its project folder and memory. Open in browser, copy the URL, or stop your own processes after a confirmation. No network access, no entitlements.","image":"https://zyvorai.github.io/port-dashboard/social/og.png","publisher":{"@type":"Organization","name":"ZYVORAI LABS PRIVATE LIMITED","url":"https://zyvor.dev"}}</script>
 </head>
@@ -45,9 +46,20 @@
   <h1 id="top">Port Dashboard</h1>
   <p class="tagline">What is listening on your Mac.</p>
   <p class="promise"><strong>Which process owns port 3000, and how do I stop it?</strong> A free menu-bar app that lists every listening TCP and UDP port with its process, project folder and memory. Open it, copy its URL, or stop it. Nothing leaves your Mac.</p>
-  <p class="cta"><a class="btn primary" href="https://github.com/zyvorai/port-dashboard/releases/tag/v1.0.0">Download for Mac</a><a class="textlink" href="#features">Learn more</a></p>
-  <p class="fine">Free · macOS 27 or later · Apple silicon · signed and notarized · no licence key</p>
+  <div class="buyer free" role="group" aria-label="Get Port Dashboard">
+    <div class="actions">
+      <a class="btn primary" href="https://github.com/zyvorai/port-dashboard/releases/download/v1.0.0/PortDashboard-1.0.0.dmg">Free download: Port Dashboard 1.0.0</a>
+    </div>
+    <p class="sub">PortDashboard-1.0.0.dmg · Free, no licence key · <a href="https://github.com/zyvorai/port-dashboard/releases/tag/v1.0.0">All downloads</a></p>
+    <p class="trust"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 4.5-3.2 8-8 9-4.8-1-8-4.5-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg><span><strong>Verified by Apple:</strong> Developer ID signed and notarized. This applies to the 1.0.0 DMG.</span></p>
+    <ul class="reqs"><li>Requires macOS 27 or later on Apple silicon. No licence key, no trial and no account.</li></ul>
+  </div>
   <figure class="shot hero-shot"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/img/hero-img-dark-1200.webp 1200w, assets/img/hero-img-dark-1800.webp 1800w" sizes="(min-width:1080px) 1040px, 100vw"><img src="assets/img/hero-img-light-1200.webp" srcset="assets/img/hero-img-light-1200.webp 1200w, assets/img/hero-img-light-1800.webp 1800w" sizes="(min-width:1080px) 1040px, 100vw" width="1800" height="1500" alt="The Port Dashboard menu-bar popover listing ports 3000, 5173, 5432 and 6379 with process, pid, project folder, memory and a scope badge, beside its About window. Rendered from the app&#x27;s own views with sample data." fetchpriority="high" decoding="async"></picture><figcaption>Sample data. Rendered from the app&#x27;s own views with invented rows; the desktop around them is illustrative, not a live capture.</figcaption></figure>
+</section>
+
+<section class="outcomes" aria-labelledby="outcomes-h">
+  <h2 id="outcomes-h">Find what is listening on your Mac.</h2>
+  <ul class="tiles"><li class="tile"><h3>See what is on port 3000</h3><p>Filter by port, process or project. Each row shows the process, the git project folder it runs from, its memory and who can reach it.</p></li><li class="tile"><h3>This Mac only, or the whole network?</h3><p>Each port is badged This Mac only, All interfaces or One interface. The Exposed filter shows only what other devices can reach.</p></li><li class="tile"><h3>Stop it, with a safety net</h3><p>Stop asks first, then sends SIGTERM. Force Kill needs a second prompt. Only your own processes can be stopped.</p></li></ul>
 </section>
 
 <section class="band" aria-label="Overview">
@@ -103,7 +115,7 @@
 </main>
 <footer class="footer">
   <p><strong>Port Dashboard</strong> · Free. The source code is private.</p>
-  <p class="links"><a href="https://github.com/zyvorai/port-dashboard/tree/main/docs">Docs</a><a href="https://github.com/zyvorai/port-dashboard/releases/tag/v1.0.0">Release</a><a href="https://github.com/zyvorai/port-dashboard/blob/main/docs/PRIVACY.md">Privacy</a><a href="https://github.com/zyvorai/port-dashboard">GitHub</a><a href="https://github.com/zyvorai/port-dashboard/blob/main/LICENSE">LICENSE</a></p>
+  <p class="links"><a href="https://zyvor.dev/contact">Support</a><a href="https://github.com/zyvorai/port-dashboard/tree/main/docs">Docs</a><a href="https://github.com/zyvorai/port-dashboard/releases/tag/v1.0.0">Release</a><a href="https://github.com/zyvorai/port-dashboard/blob/main/docs/PRIVACY.md">Privacy</a><a href="https://github.com/zyvorai/port-dashboard">GitHub</a><a href="https://github.com/zyvorai/port-dashboard/blob/main/LICENSE">LICENSE</a></p>
   <p>© 2026 ZYVORAI LABS PRIVATE LIMITED · <a href="https://zyvor.dev">zyvor.dev</a></p>
 </footer>
 </body>
